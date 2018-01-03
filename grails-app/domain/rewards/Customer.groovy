@@ -11,9 +11,9 @@ class Customer {
 
     static constraints = {
         firstName (blank: false)
-        lastName (blank: false)
-        phone (nullable: true)
-        email (email: true)
+        lastName (nullable: true)
+        phone (nullable: false)
+        email (email: true, nullable: true)
         totalPoints (nullable: true)
     }
 }
